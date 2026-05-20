@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Crédito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+    <div class="screen">
+        <div id="question-display">Clique em "ON" para iniciar a análise de crédito.</div>
+    </div>
+
+    <div class="keypad">
+        <button class="btn btn-clear" onclick="startAnalysis()">ON / C</button>
+        <button class="btn btn-disabled" disabled>/</button>
+        <button class="btn btn-disabled" disabled>*</button>
+        <button class="btn btn-disabled" disabled>-</button>
+
+        <button class="btn num-btn" onclick="pressNumber(7)">7</button>
+        <button class="btn num-btn" onclick="pressNumber(8)">8</button>
+        <button class="btn num-btn" onclick="pressNumber(9)">9</button>
+        <button class="btn btn-disabled" disabled>+</button>
+
+        <button class="btn num-btn" onclick="pressNumber(4)">4</button>
+        <button class="btn num-btn" onclick="pressNumber(5)">5</button>
+        <button class="btn num-btn" onclick="pressNumber(6)">6</button>
+        <button class="btn btn-action" onclick="pressEnter()">=</button>
+
+        <button class="btn num-btn" onclick="pressNumber(1)">1</button>
+        <button class="btn num-btn" onclick="pressNumber(2)">2</button>
+        <button class="btn num-btn" onclick="pressNumber(3)">3</button>
+        <button class="btn num-btn zero" onclick="pressNumber(0)">0</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
